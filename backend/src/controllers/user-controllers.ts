@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import User from "../models/User.js";
-import { hash, compare } from "bcrypt";
+
 import { createToken } from "../utils/token-manager.js";
 import { COOKIE_NAME } from "../utils/constants.js";
 
@@ -30,8 +30,8 @@ export const userSignup = async (
     const { name, email, password } = req.body;
     const existingUser = await User.findOne({ email });
     if (existingUser) return res.status(401).send("User already registered");
-    const hashedPassword = await hash(password, 10);
-    const user = new User({ name, email, password: hashedPassword });
+
+    const user = new User({ name, email, password });
     await user.save();
 
     // create token and store cookie
@@ -74,8 +74,8 @@ export const userLogin = async (
     if (!user) {
       return res.status(401).send("User not registered");
     }
-    const isPasswordCorrect = await compare(password, user.password);
-    if (!isPasswordCorrect) {
+
+    if (password === user.password) {
       return res.status(403).send("Incorrect Password");
     }
 
