@@ -1,10 +1,8 @@
-import { Box, useMediaQuery, useTheme } from "@mui/material";
+import { Box } from "@mui/material";
 
 import Footer from "../components/footer/Footer";
 
 const Home = () => {
-  const theme = useTheme();
-  const isBelowMd = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <Box width={"100%"} height={"100%"}>
       <Box
