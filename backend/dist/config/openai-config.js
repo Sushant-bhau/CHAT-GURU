@@ -1,9 +1,5 @@
-import { Configuration } from "openai";
-export const configureOpenAI = () => {
-    const config = new Configuration({
-        apiKey: process.env.OPEN_AI_SECRET,
-        organization: process.env.OPENAI_ORGANIZATION_ID,
-    });
-    return config;
-};
+import { GoogleGenerativeAI } from "@google/generative-ai";
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+export default model;
 //# sourceMappingURL=openai-config.js.map
