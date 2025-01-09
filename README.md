@@ -4,7 +4,7 @@
 
 Whether you need support with your daily activities, resolution of doubts, or assistance in tackling challenging queries, Chat-guru is here to offer prompt and reliable help. Feel free to explore it and ask anything—it’s here to serve your needs.</p>
 
-<p align="center"><img src= "frontend/public/airobot.jpg" alt="project-image" width="700" height="100"></p>
+<p align="center"><img src= "frontend/public/airobot.jpg" alt="project-image" width="200" height="300"></p>
 
 <h2>🚀 Demo</h2>
 
@@ -19,7 +19,7 @@ Here're some of the project's best features:
 *   build using Gemini AI
 *   responses to messages you send.
 *   Makes chat easy and fun for you.
-<p align="center"><img src="frontend/public/airobot.jpg" alt="project-image" width="400" height="80"></p>
+<p align="center"><img src="frontend/public/bot.jpeg" alt="project-image" width="200" height="300"></p>
 
 <h2>🛠️ Installation Steps:</h2>
 
