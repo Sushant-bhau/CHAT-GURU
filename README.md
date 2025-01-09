@@ -4,7 +4,7 @@
 
 Whether you need support with your daily activities, resolution of doubts, or assistance in tackling challenging queries, Chat-guru is here to offer prompt and reliable help. Feel free to explore it and ask anything—it’s here to serve your needs.</p>
 
-<p align="center"><img src= "frontend/public/boto.jpg" alt="project-image" width="700" height="300"></p>
+<p align="center"><img src= "frontend/public/airbot.jpg" alt="project-image" width="700" height="300"></p>
 
 <h2>🚀 Demo</h2>
 
